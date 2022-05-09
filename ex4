@@ -1,0 +1,1 @@
+O erro é que o printf vai estar escrevendo o endereço de X, para escrever 10 deveria ser printf(“%d\n”, *p ou **q ou x);
