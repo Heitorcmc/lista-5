@@ -1,0 +1,7 @@
+No primeiro termo você incrementa o endereço da variável p por 1.
+
+No segundo termo você incrementa por 1 a variável em que o está apontando.
+
+No terceiro termo você incrementa o endereço de p por 1 e aponta para o novo endereço.
+
+Se refere ao endereço de p + 10 e aponta para ele.
