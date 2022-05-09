@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+  // iniciar variaveis
+  int a, b;
+
+  // ler numeros
+  printf("Digite dois numeros: ");
+  scanf("%d %d", &a, &b);
+
+  // apontar para edereços
+  int *x = &a;
+  int *y = &b;
+
+  // comparar maior numero
+  if (*x > *y) {
+    printf("%d", *x);
+  }
+  else {
+     printf("%d", *y);
+  }
+  return 0;
+}
