@@ -1,0 +1,3 @@
+A diferença entre eles é que no primeiro código está mexendo com o valor da variável e no segundo código está mexendo com o endereço da variável. 
+
+No primeiro código será impresso o valor de 1 e no segundo código será impresso o valor do endereço mais 5.
