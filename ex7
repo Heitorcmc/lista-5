@@ -1,0 +1,32 @@
+#include <stdio.h>
+// inicar procedimento
+void troca(int *x, int *y);
+
+int main(void) {
+  //iniciar variaveis
+  int a, b;
+
+  // ler numeros
+  printf("Digite dois numeros: ");
+  scanf("%d %d", &a, &b);
+
+  //chamar função troca
+  troca(&a, &b);
+  
+  
+  // imprimir numeros trocados
+  printf("%d %d", a, b);
+  
+  return 0;
+}
+
+void troca(int *x, int *y) {
+  int troca;
+
+  // realizar troca
+  if (*y > *x) {
+    troca = *x;
+    *x = *y;
+    *y = troca;
+  }
+}
