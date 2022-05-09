@@ -1,0 +1,26 @@
+#include <math.h>
+#include <stdio.h>
+
+void calcCircunferencia(float R, float *compr, float *area);
+
+int main(void) {
+  // inciar variavel
+  float raio, comp, a;
+
+  // ler numero
+  printf("Digite o valor do Raio: ");
+  scanf("%f", &raio);
+  return 0;
+
+  // chamar função do calculo
+  calcCircunferencia(raio, &comp, &a);
+
+  // imprimir resultado
+  printf("%f %f", comp, a);
+}
+
+void calcCircunferencia(float R, float *compr, float *area) {
+  // realizar calculos
+  *area = 3.14 * pow(R, 2);
+  *compr = 2 * 3.14 * R;
+}
