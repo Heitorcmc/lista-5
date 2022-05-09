@@ -1,0 +1,4 @@
+F poois o valor da variavel e do ponteiro são diferentes
+V pois valorptr está apontando para a variavel valor.
+V pois o endereço dois dois são os mesmos
+F pois a variavel valor não está apontando para nada
