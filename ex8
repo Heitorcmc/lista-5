@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int crescente(int *x, int *y, int *z);
+
+int main(void) {
+  int a, b, c;
+  // ler valores
+  printf("Digite 3 valores: ");
+  scanf("%d %d %d", &a, &b, &c);
+
+  // chamar metodo para colocar numeros na ordem crescente
+  crescente(&a, &b, &c);
+
+  // imprimir numeros em ordem crescente
+  printf("%d %d %d\n", a, b, c);
+}
+
+int crescente(int *x, int *y, int *z) {
+  // criar variavel para realizar troca
+  int troca = 0;
+
+  // colocar numeros em ordem crescente
+  if (*x == *y && *y == *z) {
+    return 0;
+  } 
+  else {
+    if (*y < *x && *y < *z) {
+      troca = *x;
+      *x = *y;
+      *y = troca;
+    } else if (*z < *x && *z < *y) {
+      troca = *x;
+      *x = *z;
+      *z = troca;
+    }
+    if (*z < *y) {
+      troca = *y;
+      *y = *z;
+      *z = troca;
+    }
+    return 0;
+  }
+}
